@@ -1,0 +1,141 @@
+:root{
+    --main-color: #5F9EA0; 
+} 
+*{
+    margin:0;
+    padding:0;
+}
+
+h1{
+    font-size: 55px;
+    position: absolute;
+    top:290px;
+    left: 300px;
+    color:black;
+    text-align: center;
+    background-color:white;
+    border-radius: 20px;
+}
+
+header{
+    background-image: url("../img/imagen2.jpg");
+    height: 400px;
+    background-repeat: norepeat;
+    background-size: cover;
+    border-radius: 10px;
+    border: 2px solid black;
+
+}
+
+nav{
+    position: absolute;
+    top: 450px;
+    left:65px;
+    font-weight: bold;
+    margin: 50px 0;
+    font-size: x-large;
+}
+nav>a{
+    display:block;
+    margin: 30px 0;
+    color: white;
+    background: #008080;
+    border: 5px solid black;
+    border-radius: 50px;
+    text-align: center;
+ 
+}
+
+.azul{
+    background: #7FFF00;
+    color: black;
+}
+
+#logo{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    top:250px;
+    left:177vh;
+}
+
+main{
+    width: 50vw;
+    float: left;
+    margin-left: 370px;
+    margin-top: 70px;  
+}
+main>p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+ 
+}
+main>div{
+    background-color: #008080;
+    text-align: center;
+    border-radius: 50px;
+    border: 2px solid black;
+    margin: 20px;
+    color:white
+
+}
+.titulo{
+    text-decoration: underline;
+    font-size:30px;
+    font-weight: bold;
+}
+
+#events{
+        margin:10px 0;
+        margin-left: 25px;
+}
+
+h2{
+    border: 5px solid black;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding:20px;
+    font-size: xx-large;
+    margin-top: -50px;
+    border-radius: 50px;
+}
+
+
+#p2{
+    margin: 30px 0;
+}
+
+#container{
+    display: grid;
+    height: 60vh;
+    grid-template-columns: repeat(3, 260px);
+    grid-template-rows: repeat(3, auto);
+    gap: 20px;
+    justify-content: center;
+    align-content: end;
+}
+#container>div{
+    background: var(--main-color);
+    border-radius: 30px;
+    color:white;
+    border: 2px solid black;
+    font-weight: 150%;
+    font-size: 20 px;
+    text-align: center;
+
+}
+
+#container>div:hover{
+    transform: scale(2);
+}
+
+h3,h4,h5{
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+
