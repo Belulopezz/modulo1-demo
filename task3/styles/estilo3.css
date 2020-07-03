@@ -1,0 +1,233 @@
+:root{
+    --primary-color:#008080 ; 
+    --secondary-color:#7FFF00;
+} 
+img{
+    width: 100px;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+
+body{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-areas: 
+    "header header"
+    "div div"
+    "nav main"
+    "footer footer";
+}
+
+
+/*ESTILOS DEL HEADER*/
+h1{
+    font-size: 55px;
+    position: absolute;
+    top:70px;
+    left: 300px;
+    color:white;
+    text-shadow: 0 0 10px var(--primary-color);
+    text-align: center;
+    border-radius: 20px;
+}
+
+header{
+    grid-area: header;
+    background-image: url("../img/banner.jpg");
+    background-position: bottom;
+    height: 30vh;
+    background-size: cover;
+    border: 2px solid black;
+
+}
+
+#logo{
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    top:100px;
+    right:1px;
+}
+
+/*ESTILOS DEL NAV*/
+nav{
+    width: 190px;
+    grid-area: nav;
+    font-weight: bold;
+    margin: 50px 0;
+    font-size: x-large;
+    margin-left:20px;
+}
+nav>a{
+    display:block;
+    margin: 30px 0;
+    color: white;
+    background: #008080;
+    border: 5px solid black;
+    border-radius: 50px;
+    text-align: center;
+ 
+}
+
+.azul, nav>a:hover{
+    background: #7FFF00;
+    color: black;
+}
+
+
+
+/*ESTILOS DEL MAIN*/
+
+main>article{
+    width:300px;
+    height: 300px;
+    background-color: var(--primary-color);
+    color: white;
+    border-radius: 20px;
+    border:5px solid #003333;
+    margin: 20px 10px;
+}
+main{
+    align-items: center;
+    top:50vh;
+    left:40vh;
+    grid-area: main;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-left:0px;
+
+}
+#about{
+    flex-direction: row;
+}
+main>p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+ 
+}
+#gallery>.grid-container{
+    grid-template-areas: none;
+    grid-template-columns: repeat(3, 250px);
+    grid-template-rows: repeat(2, 200px);
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    grid-gap: 10px;
+    border-radius: 10px;
+
+}
+
+#gallery img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid var(--primary-color)
+
+}
+
+#gallery>.grid-container>div:last-child{
+    grid-column: 2 / span 2;
+}
+
+#gallery>.grid-container>div>img:hover{
+    transform: scale(2);
+}
+#date{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    background-color: #003333;
+    border: 5px solid var(--primary-color);
+    margin-left: 5px;
+    color: white;
+    width: 800px;
+    height: 100px;
+}
+
+
+
+.titulo{
+    text-decoration: underline;
+    font-size:30px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#events{
+        margin:10px 0;
+        margin-left: 50px;
+}
+.box{
+    grid-area: div;
+}
+h2{
+    width: 1200px;
+    color:white;
+    background-color: black;
+    text-align: center;
+    padding:15px;
+    font-size: x-large;
+    margin-top: -40px;
+    border-radius: 5px;
+}
+
+main>section{
+    width: 300px;
+    height: 100px;
+    text-align: center;
+    background-color: #003333;
+    border:2px solid var(--primary-color);
+    border-radius: 10px;
+    margin: 30px;
+    color:white;
+    position: absolute;
+    left:600px;
+    top:400px;
+}
+#p2{
+    margin:10px;
+}
+#p1{
+    margin:10px
+}
+
+h3,h4,h5{
+    font-size: 20px;
+    font-weight: bolder;
+    text-decoration: underline;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+/* ESTILOS DEL FOOTER */
+footer{
+    grid-area: footer;
+    background-color: var(--primary-color);
+    font-size: 150%;
+    padding: 10px 0;
+    text-align: center;
+
+}
+
+footer>a{
+    margin:0 30px;
+    color: var(--secondary-color);
+    
+}
+
