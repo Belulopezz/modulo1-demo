@@ -6,10 +6,10 @@ img{
     width: 100px;
 }
 
-*{
+/* *{
     margin:0;
     padding:0;
-}
+}  */
 a{
     text-decoration: none;
 }
@@ -32,14 +32,17 @@ body{
 
 /*ESTILOS DEL HEADER*/
 h1{
-    font-size: 55px;
+    font-size: 70px;
     position: absolute;
-    top:70px;
-    left: 300px;
+    top:30px;
+    left: 50px;
     color:white;
-    text-shadow: 0 0 10px var(--primary-color);
+
     text-align: center;
     border-radius: 20px;
+    background: -webkit-linear-gradient( #7FFF00,white );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 header{
@@ -85,7 +88,10 @@ nav>a{
     color: black;
 }
 
-
+/* Estilos del body */
+body{
+    background-image: url("../img/fondo.jpg");
+}
 
 /*ESTILOS DEL MAIN*/
 
@@ -161,6 +167,26 @@ main>p{
     height: 100px;
 }
 
+#add{
+    width: 80%;
+    background-color:#003333;
+    margin: 10px;
+    border: 2px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+}
+#add1{
+    background-color: var(--primary-color);
+    color: white;
+    margin-left 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+#add2{
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+}
+
 
 
 .titulo{
@@ -168,6 +194,7 @@ main>p{
     font-size:30px;
     font-weight: bold;
     margin-left: 20px;
+    color: var(--secondary-color)
 }
 
 #events{
@@ -214,6 +241,101 @@ h3,h4,h5{
     text-decoration: underline;
     margin-top: 5px;
     margin-bottom: 10px;
+}
+
+/* ESTILOS RULES.HTML */
+#rules{
+    background-color: var(--primary-color);
+    border: 5px solid var(--secondary-color);
+    color: white;
+}
+#rules1{
+    margin-top: 20px;
+}
+#rules2{
+    margin-top: 0;
+}
+dt{
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
+    background-color: #003333;
+    border-radius: 5px;
+}
+li{
+    text-align: left;
+    margin-right: 10px;
+}
+ul li{
+    background-color:#009999;
+    margin: 20px;
+    margin-right: 10px;
+    padding: 1px;
+}
+
+ol li{
+    background-color: #003333;
+    margin: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 1px;
+}
+
+#typea>li{
+    background-color: #009999;
+    margin-right: 10px;
+}
+#circle{
+    list-style-type: circle;
+    margin-left: 25px;
+}
+
+/* ESTILOS DE TABLA */
+/* tbody */
+td,th{
+    border: 1px solid;
+    border-color: var(--primary-color);
+}
+th{
+    height: 50px;
+    background-color: #003333;
+    color: var(--secondary-color);
+}
+
+tbody tr:nth-child(even){
+    background-color:#a3c2c2 ;
+}
+tbody tr:nth-child(odd){
+    background-color:  #f0f5f5;
+}
+
+tbody tr:hover{
+    background-color: var(--secondary-color);
+
+}
+/* tfoot */
+tfoot{
+    background-color: #003333;
+    color: var(--secondary-color)
+}
+
+/* estilo general tabla  */
+table{
+    border-collapse: collapse;
+    border: 5px solid var(--primary-color);
+    width: 70%;
+    height: 100%;
+    margin: 10px
+}
+#schedule{
+    font-size: large;
+    text-decoration: none;
+}
+#schedule1{
+    margin: 0;
+    text-decoration: underline;
+    font-size: medium;
+
 }
 /* ESTILOS DEL FOOTER */
 footer{
